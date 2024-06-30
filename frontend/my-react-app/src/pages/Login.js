@@ -50,7 +50,7 @@ const Login = () => {
             <img src={user_icon} alt="User Icon" />
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Name" required
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -61,7 +61,7 @@ const Login = () => {
           
           <input
             type="email"
-            placeholder="Email id"
+            placeholder="Email id" required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -70,7 +70,7 @@ const Login = () => {
           <img src={password_icon} alt="Password Icon" />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Password" required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
